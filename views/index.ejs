@@ -32,8 +32,11 @@
   }
 </style>
 <body>
+  <div id="top">
+    <img src="/images/top1.png" alt="">
+</div>
   <!-- =========   HEADER __ START   =========  -->
-  <header>
+  <header id="home">
     <div id="particle"></div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
@@ -48,19 +51,19 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto smooth-scroll">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Главный <span class="sr-only">(current)</span></a>
+              <a class="nav-link links__mnenu active_link" href="#home">Главный <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about" data-offset="100">Обо мне</a>
+              <a class="nav-link links__mnenu" href="#about" data-offset="100">Обо мне</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills" data-offset="100">Навыки</a>
+              <a class="nav-link links__mnenu" href="#skills" data-offset="100">Навыки</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#works" data-offset="100">Портфолио</a>
+              <a class="nav-link links__mnenu" href="#works" data-offset="100">Портфолио</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact" data-offset="100">Контакты</a>
+              <a class="nav-link links__mnenu" href="#contact" data-offset="100">Контакты</a>
             </li>
             <li class="nav-item nav__item-icons">
               <a class="nav-link" href="/NewREZUME.pdf" download>
@@ -93,7 +96,7 @@
   <!-- =========   HEADER __ END   =========  -->
 
   <!-- =========   about __ START   =========  -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <h2>Обо мне</h2>
       <div class="row about__row-kect">
@@ -174,7 +177,7 @@
 
   <!-- =========   Scills __ START   =========  -->
 
-  <section class="scills">
+  <section class="scills" id="skills">
     <div class="container">
       <h2 class="scills__title">Навыки</h2>
 
@@ -510,7 +513,7 @@
   <!-- =========   Scills __ END   =========  -->
 
   <!-- =========   Portfolio __ START   =========  -->
-  <section class="portfolio">
+  <section class="portfolio" id="works">
     <div class="container">
       <h2>Портфолио</h2>
     </div>
@@ -703,7 +706,7 @@
   <!-- =========   Scills __ END   =========  -->
 
   <!-- =========   Contact __ START   =========  -->
-  <footer class="footer">
+  <footer class="footer" id="contact">
       <h2>Контакт</h2>    
       <div class="contact__row">
         <div class="col-lg-4 col-md-6 col-sm-12 d-flex">

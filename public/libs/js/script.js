@@ -113,6 +113,47 @@ $(document).ready(function () {
         "retina_detect": true
       })
       
-   
+        
+      var $links = $('.links__mnenu');
+        
+      $links.click(function (e) {
+            e.preventDefault();
+      })
+      $(window).scroll(function () {
+              
+       
+        var scroll = $(this).scrollTop();
 
+            if(scroll > 300) {
+                $('#top').fadeIn();
+            }
+            else{
+                $('#top').fadeOut();
+            }
+            $links.each(function () {
+              var target = $(this).attr('href');  //  active 
+              var selector = $(target).offset().top;  // kordinator silki
+  
+              if(scroll >= selector) {
+                  $links.removeClass('active_link');
+                  $(this).addClass('active_link')
+              }
+          })
+        })
+        
+        $('#top').click(function () {
+            $('html, body').animate({
+                scrollTop : 0
+            }, 
+            
+            
+            1000)
+        })
+
+
+     
+     
+          
+       
+      
 });

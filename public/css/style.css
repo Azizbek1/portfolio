@@ -2,6 +2,26 @@ header {
   height: 100vh;
   position: relative;
 }
+#top {
+  display: none;
+  position: fixed;
+  right: 5%;
+  bottom: 2%;
+  cursor: pointer;
+  z-index: 10;
+}
+/* #FFD551 */
+.links__mnenu.active_link{
+  color: #FFD551 !important;
+}
+#top img {
+  padding: 15px;
+  border-radius: 3px;
+  width: 70px;
+  height: 70px;
+  background: #ff6525;
+
+}
 
 header .nav__item-icons {
   display: -webkit-box;
